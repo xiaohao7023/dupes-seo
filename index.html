@@ -129,6 +129,25 @@
             font-weight: 500;
         }
 
+        /* QR Code */
+        .qr-wrapper {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 8px;
+            margin-top: 32px;
+        }
+        .qr-code {
+            border-radius: 12px;
+            border: 1px solid var(--border);
+            box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+        }
+        .qr-wrapper span {
+            font-size: 13px;
+            color: var(--text-secondary);
+            font-weight: 500;
+        }
+
         /* Stats bar */
         .stats {
             display: flex; justify-content: center; gap: 48px;
@@ -339,6 +358,10 @@
                 Download Free
             </a>
             <a href="#features" class="btn-secondary">See How It Works</a>
+        </div>
+        <div class="qr-wrapper">
+            <img src="images/qr-code.png" alt="Scan to download Dupes from App Store" class="qr-code" width="120" height="120">
+            <span>Scan to download</span>
         </div>
     </section>
 

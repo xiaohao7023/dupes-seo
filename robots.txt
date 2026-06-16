@@ -1,3 +1,4 @@
 User-agent: *
 Allow: /
-Sitemap: https://dupes.app/sitemap.xml
+
+Sitemap: https://xiaohao7023.github.io/dupes-seo/sitemap.xml

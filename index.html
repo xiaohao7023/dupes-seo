@@ -101,6 +101,34 @@
         }
         .btn-secondary:hover { border-color: var(--text-secondary); }
 
+        /* Screenshots */
+        .screenshots-section { margin-bottom: 40px; }
+        .screenshots-row {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        .screenshot-card {
+            flex: 1;
+            min-width: 240px;
+            max-width: 320px;
+            text-align: center;
+        }
+        .screenshot-card img {
+            width: 100%;
+            border-radius: 20px;
+            box-shadow: 0 4px 24px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+        .screenshot-card img:hover { transform: scale(1.03); }
+        .screenshot-card p {
+            font-size: 13px;
+            color: var(--text-secondary);
+            margin-top: 12px;
+            font-weight: 500;
+        }
+
         /* Stats bar */
         .stats {
             display: flex; justify-content: center; gap: 48px;
@@ -311,6 +339,28 @@
                 Download Free
             </a>
             <a href="#features" class="btn-secondary">See How It Works</a>
+        </div>
+    </section>
+
+    <!-- App Screenshots -->
+    <section class="screenshots-section container">
+        <div class="section-header">
+            <h2>See it in action</h2>
+            <p>Clean, intuitive design. Find what's wasting space in seconds.</p>
+        </div>
+        <div class="screenshots-row">
+            <div class="screenshot-card">
+                <img src="images/screenshot-dashboard.jpg" alt="Dupes Dashboard showing storage overview and scan categories" loading="lazy">
+                <p>Dashboard — see your storage at a glance</p>
+            </div>
+            <div class="screenshot-card">
+                <img src="images/screenshot-home.jpg" alt="Dupes main screen with smart recommendations" loading="lazy">
+                <p>Smart Clean — AI picks what to remove</p>
+            </div>
+            <div class="screenshot-card">
+                <img src="images/screenshot-settings.jpg" alt="Dupes settings showing privacy-first design" loading="lazy">
+                <p>Settings — 100% private, lifetime access</p>
+            </div>
         </div>
     </section>
 
